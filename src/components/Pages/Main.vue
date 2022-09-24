@@ -38,7 +38,7 @@ export default {
             if( localStorage.getItem('token') && localStorage.getItem('token') !== '' ){
                 this.auth = true;
             } else {
-                this.$router.push('/LogIn');
+                this.$router.push('/');
             }
         }
     }
