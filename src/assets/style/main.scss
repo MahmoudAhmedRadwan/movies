@@ -1,0 +1,84 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body, #app, .page_container, .content, .sideMenu{
+    min-height: 100vh;
+}
+a{text-decoration: none;}
+li{list-style: none;}
+h1,h2,h3,h4,p{
+    margin-bottom: 0;
+}
+ul{
+    padding-left: 0;
+}
+select{
+    cursor: pointer;
+    outline: none;
+}
+
+// custom Class
+.flex{
+    display: flex;
+}
+.flex_center_x{
+    display: flex;
+    align-items: center;
+}
+.flex_space_between{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex_all_center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+// class for the hole page
+.content_container{
+    margin: 30px;
+}
+
+// Filter Section
+.filterSec{
+    border-radius: 30px;
+    background-color: #5F999B;
+    padding: 3px 10px;
+    margin-bottom: 40px;
+    display: flex;
+    @media(max-width: 576px) {
+        flex-direction: column;
+        align-items: center;
+    }
+    select,
+    .ceateMovie{
+        background-color: #FFF;
+        border: 0;
+        border-radius: 30px;
+        padding: 3px 10px;
+        min-width: 200px;
+        color: #b6b3b3;
+        cursor: pointer;
+        outline: none;
+        text-align: center;
+    }
+    input::placeholder{
+        color: #D6D6D6;
+    }
+    .ceateMovie{
+        margin-left: 20px;
+        @media(max-width: 576px) {
+            margin: 10px 0 0 0;
+        }
+    }
+}
+
+.spiiner{
+    text-align: center;
+    margin-top: 50px;
+}
